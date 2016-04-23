@@ -1,0 +1,33 @@
+<ion-view title="Home" id="page1">
+    <ion-content padding="true" class="has-header">
+        <h2 id="home-heading1" style="color:#000000;text-align:center;">Register Your Position</h2>
+        <form class="list">
+            <label class="item item-input">
+                <span class="input-label">Name</span>
+                <input type="text" id ="txtName"  placeholder="Driver's Name">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">ID</span>
+                <input type="text" placeholder="Car's ID"  id="txtCar" >
+            </label>
+        </form>       
+        <div style="color:#000000;text-align:center;">
+              <br>
+            <div>     
+                Latitude:
+             </div>            
+             <br>           
+             <div id="geoLocationx"> </div>
+        </div>
+        <br>
+         <div style="color:#000000;text-align:center;">
+            <div>     
+                Longitude:
+             </div>            
+             <br>
+            <div id="geoLocationy"> </div>
+        </div>
+         <br> 
+        <button id="home-button1" class="button button-positive  button-block"  onclick="getLocalStoragehome()" >Save</button>
+    </ion-content>
+</ion-view>
